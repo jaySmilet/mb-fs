@@ -1,0 +1,115 @@
+{
+  "title": "Employee Onboarding Form",
+  "description": "Complete this form to onboard a new employee to the organization. All fields are required unless marked optional.",
+  "fields": [
+    {
+      "name": "firstName",
+      "label": "First Name",
+      "type": "text",
+      "placeholder": "Enter first name",
+      "validation": {
+        "required": true,
+        "minLength": 2,
+        "maxLength": 50,
+        "regex": "^[a-zA-Z\\s]+$"
+      }
+    },
+    {
+      "name": "lastName",
+      "label": "Last Name",
+      "type": "text",
+      "placeholder": "Enter last name",
+      "validation": {
+        "required": true,
+        "minLength": 2,
+        "maxLength": 50,
+        "regex": "^[a-zA-Z\\s]+$"
+      }
+    },
+    {
+      "name": "employeeId",
+      "label": "Employee ID",
+      "type": "text",
+      "placeholder": "EMP-XXXX",
+      "validation": {
+        "required": true,
+        "regex": "^EMP-\\d{4}$"
+      }
+    },
+    {
+      "name": "department",
+      "label": "Department",
+      "type": "select",
+      "placeholder": "Select department",
+      "options": [
+        { "label": "Engineering", "value": "engineering" },
+        { "label": "Design", "value": "design" },
+        { "label": "Marketing", "value": "marketing" },
+        { "label": "Sales", "value": "sales" },
+        { "label": "HR", "value": "hr" },
+        { "label": "Finance", "value": "finance" }
+      ],
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "skills",
+      "label": "Skills (Select 2-5)",
+      "type": "multi-select",
+      "options": [
+        { "label": "JavaScript", "value": "javascript" },
+        { "label": "React", "value": "react" },
+        { "label": "Node.js", "value": "nodejs" },
+        { "label": "Python", "value": "python" },
+        { "label": "Java", "value": "java" },
+        { "label": "AWS", "value": "aws" },
+        { "label": "Docker", "value": "docker" }
+      ],
+      "validation": {
+        "required": true,
+        "minSelected": 2,
+        "maxSelected": 5
+      }
+    },
+    {
+      "name": "salary",
+      "label": "Expected Salary",
+      "type": "number",
+      "placeholder": "Annual salary in USD",
+      "validation": {
+        "required": true,
+        "min": 40000,
+        "max": 250000
+      }
+    },
+    {
+      "name": "startDate",
+      "label": "Preferred Start Date",
+      "type": "date",
+      "validation": {
+        "required": true,
+        "minDate": "2025-01-01"
+      }
+    },
+    {
+      "name": "bio",
+      "label": "Professional Bio",
+      "type": "textarea",
+      "placeholder": "Tell us about your professional experience...",
+      "validation": {
+        "required": true,
+        "minLength": 50,
+        "maxLength": 500
+      }
+    },
+    {
+      "name": "remoteWork",
+      "label": "Eligible for Remote Work",
+      "type": "switch",
+      "validation": {
+        "required": true
+      }
+    }
+  ]
+}
