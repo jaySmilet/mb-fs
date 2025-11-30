@@ -138,3 +138,17 @@ npm run dev
 - Form schema is static and matches the “Employee Onboarding” schema defined in the assignment; dynamic editing of the schema is out of scope.
 - Validation source of truth is the backend; frontend performs only light validation/UX and relies on backend responses as authoritative.
 - For deployment, the intended setup is one URL for the backend API and one for the frontend, with the frontend configured to call the deployed backend base URL.
+- 
+
+## Screenshots
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/129ec67d-3b85-4621-b361-a9bad9d82352" />
+
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/03f45d62-05db-4779-b3aa-a1d9f7404efd" />
+
+
+<img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/a0368e6e-0530-4327-b445-70e56e3cfe1b" />
+
+
+
